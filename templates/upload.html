@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/main.css') }}"
+    /> -->
+  </head>
+  <body>
+    <div>
+      <form
+        action="http://localhost:5000/uploader"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <div>
+          <div>
+            <p>ก่อนกดใบจัดเตรียมสินค้า</p>
+            <input type="file" name="before" />
+          </div>
+          <br />
+          <div>
+            <p>หลังกดใบจัดเตรียมสินค้า</p>
+            <input type="file" name="after" />
+          </div>
+          <br />
+          <input type="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
