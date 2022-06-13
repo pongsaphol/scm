@@ -30,6 +30,8 @@ def modify_data(before_f, after_f):
   data_list
   for line in data_list:
     detail = ""
+    if line[2] == None:
+      continue
     if line[2].strip() == "Thai Post (REG)":
       detail = "R"
     if line[2].strip() == "Thai Post (EMS)":
